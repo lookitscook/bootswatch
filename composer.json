@@ -26,6 +26,8 @@
                 "flatly/*",
                 "fonts/*",
                 "journal/*",
+                "kiosk-dark/*",
+                "kiosk-light/*",
                 "lumen/*",
                 "paper/*",
                 "readable/*",
