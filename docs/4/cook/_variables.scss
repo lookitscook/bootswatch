@@ -6,30 +6,36 @@
 // Color system
 //
 
+// gray-900 target color #171717 
+// from https://razorltd.github.io/sasscolourfunctioncalculator/
+$darken: 4.31; 
+// white target #ddd
+$text-darken: 13.33;
+
 $white:    #fff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #ebebeb !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
-$gray-600: #999 !default;
-$gray-700: #444 !default;
-$gray-800: #303030 !default;
-$gray-900: #222 !default;
+$gray-100: darken(#f8f9fa, $darken * (1/9)) !default;
+$gray-200: darken(#ebebeb, $darken * (2/9)) !default;
+$gray-300: darken(#dee2e6, $darken * (3/9)) !default;
+$gray-400: darken(#ced4da, $darken * (4/9)) !default;
+$gray-500: darken(#adb5bd, $darken * (5/9)) !default;
+$gray-600: darken(#999, $darken * (6/9)) !default;
+$gray-700: darken(#444, $darken * (7/9)) !default;
+$gray-800: darken(#303030, $darken * (8/9)) !default;
+$gray-900: darken(#222, $darken * (9/9)) !default;
 $black:    #000 !default;
 
-$blue:    #375a7f !default;
-$indigo:  #6610f2 !default;
-$purple:  #6f42c1 !default;
-$pink:    #e83e8c !default;
-$red:     #E74C3C !default;
-$orange:  #fd7e14 !default;
-$yellow:  #F39C12 !default;
-$green:   #00bc8c !default;
-$teal:    #20c997 !default;
-$cyan:    #3498DB !default;
+$indigo:  darken(#6610f2, $darken) !default;
+$purple:  darken(#6f42c1, $darken) !default;
+$pink:    darken(#e83e8c, $darken) !default;
+$red:     darken(#E74C3C, $darken) !default;
+$orange:  darken(#fd7e14, $darken) !default;
+$yellow:  darken(#F39C12, $darken) !default;
+$green:   darken(#00bc8c, $darken) !default;
+$teal:    darken(#20c997, $darken) !default;
+$cyan:    darken(#3498DB, $darken) !default;
+$blue:    $cyan;
 
-$primary:       $blue !default;
+$primary:       $black !default;
 $secondary:     $gray-700 !default;
 $success:       $green !default;
 $info:          $cyan !default;
@@ -43,15 +49,21 @@ $yiq-contrasted-threshold:  175 !default;
 // Body
 
 $body-bg:                   $gray-900 !default;
-$body-color:                $white !default;
+$body-color:                darken($white, $text-darken) !default;
 
 // Links
 
-$link-color:                $success !default;
+$link-color:                $blue !default;
 
 // Fonts
 
-$font-family-sans-serif:      "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$font-family-sans-serif:      sans-serif !default;
+$font-family-monospace:       monospace !default;
+
+$headings-font-family:        $font-family-monospace;
+$input-btn-font-family:       $font-family-monospace;
+
+$headings-font-weight:        normal;
 
 $font-size-base:              0.9375rem !default;
 
@@ -103,7 +115,7 @@ $navbar-dark-color:                rgba($white,.6) !default;
 $navbar-dark-hover-color:          $white !default;
 
 $navbar-light-color:                 $white !default;
-$navbar-light-hover-color:           $success !default;
+$navbar-light-hover-color:           $blue !default;
 $navbar-light-active-color:         $white !default;
 $navbar-light-disabled-color:       rgba($white,.3) !default;
 $navbar-light-toggler-border-color: rgba($white,.1) !default;
@@ -111,19 +123,19 @@ $navbar-light-toggler-border-color: rgba($white,.1) !default;
 // Pagination
 
 $pagination-color:                  $white !default;
-$pagination-bg:                     $success !default;
+$pagination-bg:                     $blue !default;
 $pagination-border-width:           0 !default;
 $pagination-border-color:           transparent !default;
 
 $pagination-hover-color:            $white !default;
-$pagination-hover-bg:               lighten($success, 10%) !default;
+$pagination-hover-bg:               lighten($blue, 10%) !default;
 $pagination-hover-border-color:     transparent !default;
 
 $pagination-active-bg:              $pagination-hover-bg !default;
 $pagination-active-border-color:    transparent !default;
 
 $pagination-disabled-color:         $white !default;
-$pagination-disabled-bg:            darken($success, 15%) !default;
+$pagination-disabled-bg:            darken($blue, 15%) !default;
 $pagination-disabled-border-color:  transparent !default;
 
 // Jumbotron

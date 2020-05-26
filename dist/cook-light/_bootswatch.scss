@@ -10,14 +10,8 @@ $web-font-path: "https://fonts.googleapis.com/css?family=Lato:400,700,400italic"
 
 // Navbar =======================================================================
 
-.bg-primary {
-  .navbar-nav .active > .nav-link {
-    color: $success !important;
-  }
-}
-
 .bg-dark {
-  background-color: $success !important;
+  background-color: $gray-600 !important;
   &.navbar-dark .navbar-nav {
     .nav-link:focus,
     .nav-link:hover,
@@ -25,9 +19,16 @@ $web-font-path: "https://fonts.googleapis.com/css?family=Lato:400,700,400italic"
       color: $primary !important;
     }
   }
+  .btn, .btn-secondary{
+    background-color: lighten($gray-600, 10%);
+  }
 }
 
 // Buttons =====================================================================
+
+.navbar{
+  font-family: $font-family-monospace;
+}
 
 .btn {
   &-secondary,

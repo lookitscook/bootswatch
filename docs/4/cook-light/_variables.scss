@@ -6,30 +6,34 @@
 // Color system
 //
 
+// gray-900 target color #171717 
+// from https://razorltd.github.io/sasscolourfunctioncalculator/
+$darken: 4.31; 
+
 $white:    #fff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #ecf0f1 !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #b4bcc2 !default;
-$gray-600: #95a5a6 !default;
-$gray-700: #7b8a8b !default;
-$gray-800: #343a40 !default;
-$gray-900: #212529 !default;
+$gray-100: darken(#f8f9fa, $darken * (1/9)) !default;
+$gray-200: darken(#ebebeb, $darken * (2/9)) !default;
+$gray-300: darken(#dee2e6, $darken * (3/9)) !default;
+$gray-400: darken(#ced4da, $darken * (4/9)) !default;
+$gray-500: darken(#adb5bd, $darken * (5/9)) !default;
+$gray-600: darken(#999, $darken * (6/9)) !default;
+$gray-700: darken(#444, $darken * (7/9)) !default;
+$gray-800: darken(#303030, $darken * (8/9)) !default;
+$gray-900: darken(#222, $darken * (9/9)) !default;
 $black:    #000 !default;
 
-$blue:    #2C3E50 !default;
-$indigo:  #6610f2 !default;
-$purple:  #6f42c1 !default;
-$pink:    #e83e8c !default;
-$red:     #E74C3C !default;
-$orange:  #fd7e14 !default;
-$yellow:  #F39C12 !default;
-$green:   #18BC9C !default;
-$teal:    #20c997 !default;
-$cyan:    #3498DB !default;
+$indigo:  darken(#6610f2, $darken) !default;
+$purple:  darken(#6f42c1, $darken) !default;
+$pink:    darken(#e83e8c, $darken) !default;
+$red:     darken(#E74C3C, $darken) !default;
+$orange:  darken(#fd7e14, $darken) !default;
+$yellow:  darken(#F39C12, $darken) !default;
+$green:   darken(#00bc8c, $darken) !default;
+$teal:    darken(#20c997, $darken) !default;
+$cyan:    darken(#3498DB, $darken) !default;
+$blue:    $cyan;
 
-$primary:       $blue !default;
+$primary:       $black !default;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
@@ -42,12 +46,17 @@ $yiq-contrasted-threshold:  175 !default;
 
 // Links
 
-$link-color:                $success !default;
+$link-color:                $blue !default;
 
 // Fonts
 
-$font-family-sans-serif:      "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$font-family-sans-serif:      sans-serif !default;
+$font-family-monospace:       monospace !default;
 
+$headings-font-family:        $font-family-monospace;
+$input-btn-font-family:       $font-family-monospace;
+
+$headings-font-weight:        normal;
 $font-size-base:              0.9375rem !default;
 
 $h1-font-size:                3rem !default;
