@@ -1,13 +1,16 @@
-// Simplex 3.4.1
+// Kiosk Light 1.0.0
 // Bootswatch
 // -----------------------------------------------------
+@import url("https://use.typekit.net/wcm7ifi.css");
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&display=swap');
 
-@web-font-path: "https://fonts.googleapis.com/css?family=Open+Sans:400,700";
+/*@web-font-path: ;
 
 .web-font(@path) {
-  @import (css) url("@{path}");
+  
 }
 .web-font(@web-font-path);
+.web-font()*/
 
 .btn-shadow(@color) {
   #gradient > .vertical-three-colors(lighten(@color, 3%), @color, 6%, darken(@color, 3%));
@@ -36,7 +39,7 @@
 
 .btn-default,
 .btn-default:hover {
-  .btn-shadow(@btn-default-bg);
+  background: @btn-default-bg;
 }
 
 .btn-primary,

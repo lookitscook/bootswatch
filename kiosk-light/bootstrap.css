@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+@import url("https://use.typekit.net/wcm7ifi.css");
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&display=swap');
 /*!
  * bootswatch v3.4.1
  * Homepage: http://bootswatch.com
@@ -1077,7 +1078,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Bree", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Noto Sans", Helvetica, Arial, sans-serif;
   font-size: 13px;
   line-height: 1.42857143;
   color: #777777;
@@ -5896,7 +5897,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Bree", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Noto Sans", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.42857143;
@@ -6014,7 +6015,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Bree", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Noto Sans", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.42857143;
@@ -6646,6 +6647,13 @@ button.close {
     display: none !important;
   }
 }
+/*@web-font-path: ;
+
+.web-font(@path) {
+  
+}
+.web-font(@web-font-path);
+.web-font()*/
 .navbar-inverse .badge {
   background-color: #fff;
   color: #303030;
@@ -6655,12 +6663,7 @@ button.close {
 }
 .btn-default,
 .btn-default:hover {
-  background-image: linear-gradient(#4f5151, #474949 6%, #3f4141);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff4f5151', endColorstr='#ff3f4141', GradientType=0);
-  background-repeat: no-repeat;
-  -webkit-filter: none;
-          filter: none;
-  border: 1px solid #2e2f2f;
+  background: #474949;
 }
 .btn-primary,
 .btn-primary:hover {
